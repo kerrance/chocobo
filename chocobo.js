@@ -35,7 +35,7 @@ function showSlides(int) {
     allSlides[i].style.display = "none";
   }
 
-  allSlides[currentSlide-1].style.display = "block";
+  allSlides[currentSlide - 1].style.display = "block";
 }
 
 setInterval(nextSlide, interval);
