@@ -24,13 +24,31 @@
     header, section, footer {
       margin: 2rem;
     }
+    .slide {
+      display: none;
+    }
   </style>
 </head>
 <body>
   <header>Chocobo.js</header>
 
   <section>
-    <p>Text.</p>
+    <article class="slide">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum finibus enim, nec convallis arcu egestas eget. Ut sit amet cursus magna. Maecenas feugiat purus vitae quam luctus imperdiet. Fusce accumsan dolor et erat efficitur, et auctor leo ultrices. In a arcu diam. Morbi posuere ex eu ornare pharetra. Integer ac commodo metus, quis porta ante.</p>
+    </article>
+
+    <article class="slide">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis, risus in ullamcorper eleifend, odio elit ullamcorper neque, vel suscipit felis sapien imperdiet tellus. Vivamus viverra finibus libero, sollicitudin finibus ligula gravida eget. Nam interdum ac magna vitae feugiat. Proin eget placerat sem, sit amet congue dolor. Curabitur commodo, ipsum sit amet sodales mollis, lacus orci tincidunt purus, in pulvinar neque urna tempus nunc. Morbi iaculis vel purus ut malesuada. Praesent lectus felis, tempus id velit et, volutpat placerat urna. Nullam semper enim ac massa bibendum, id malesuada nibh vestibulum.</p>
+    </article>
+
+    <article class="slide">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ultricies velit. Nam magna eros, sagittis et nibh nec, pellentesque bibendum mi. Curabitur aliquam dictum tellus a scelerisque. Donec tempus nulla ante, quis tincidunt velit ultricies tempor. Quisque non tincidunt est, ac rhoncus dolor. Sed tortor dolor, tincidunt vitae odio id, luctus sollicitudin orci. Aenean aliquam tempus eros. Aliquam sit amet libero in risus consectetur gravida at id neque. Suspendisse consequat efficitur dolor id tempus. Suspendisse aliquam porta libero, eu accumsan quam sollicitudin sed.</p>
+    </article>
+  </section>
+
+  <section class="controls">
+    <a class="button back" onclick="shiftSlide(-1)">&#9664;</a>
+    <a class="button forward" onclick="shiftSlide(1)">&#9654;</a>
   </section>
 
   <footer>
