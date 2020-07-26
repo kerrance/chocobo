@@ -5,6 +5,8 @@
 */
 
 let currentSlide = 1;
+let allSlides = document.getElementsByClassName("slide");
+let interval = 5000;
 
 function shiftSlide(int) {
   showSlides(currentSlide += int)
@@ -12,7 +14,6 @@ function shiftSlide(int) {
 
 function showSlides(int) {
   var i;
-  var allSlides = document.getElementsByClassName("slide");
 
   if (int > allSlides.length) {
     currentSlide = 1;
