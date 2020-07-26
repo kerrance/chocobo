@@ -12,6 +12,10 @@ function shiftSlide(int) {
   showSlides(currentSlide += int)
 }
 
+function nextSlide() {
+  shiftSlide(1);
+}
+
 function showSlides(int) {
   var i;
 
@@ -34,4 +38,5 @@ function showSlides(int) {
   allSlides[currentSlide-1].style.display = "block";
 }
 
+setInterval(nextSlide, interval);
 showSlides(currentSlide);
